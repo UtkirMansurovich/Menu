@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.App{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.underline{
+    width: 70px;
+    border-bottom: 3px solid #c59d5f;
+    margin-top: 0.75em;
+}
+h1{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 5%;
+}
+ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3%;
+}
+ul li{
+    list-style: none;
+    text-decoration: none;
+    color: #c59d5f;
+    padding: 0.5rem 1rem;
+    transition: 0.5s ease;
+}
+ul li:hover{
+    background: #c59d5f;
+    color: #FFf;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+.bigCard{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:35px;
+    margin-top: 5%;
+}
+@media(max-width:1325px){
+    .bigCard{
+        grid-template-columns: 80%;
+        justify-content: center;
+    }
+}
+.card{
+   display: flex;
+}
+@media(max-width:800px){
+    .card{
+        flex-direction: column;
+    }
+    
+}
+.img{
+    width: 235px;
+    height: 160px;
+    border: 5px solid #c59d5f;
+    border-radius: 8px;
+}
+img{
+    width: 225px;
+    height: 150px;
+}
+.text{
+    margin-left: 30px;
+}
+@media(max-width:800px){
+    .text{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .img{
+        width: 100%;
+        height: 210px;
+    }
+    img{
+        width: 100%;
+        height: 200px;
+    }
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.title{
+    text-transform: capitalize;
+}
+.price{
+    color: #c59d5f;
+}
+hr{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px dotted #333;
+}
+.desc{
+    margin-top: 16px;
+    color: rgb(98, 102, 141);
+    line-height: 25px;
+}
+a{
+    text-decoration: none;
+    color: #c59d5f;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+li:hover a{
+    color: #fff;
+}
